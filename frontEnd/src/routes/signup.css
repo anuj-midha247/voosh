@@ -1,0 +1,66 @@
+form{
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 30%;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	padding: 30px;
+  }
+  
+  h1{
+	text-align: center;
+	
+  }
+  input[type="text"],
+  input[type="number"],
+  input[type="password"]
+   {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  }
+
+  input[type="submit"]{
+	padding: 12px 20px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+  }
+
+  table{
+	border-collapse: collapse;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	border: 2px solid black;
+	
+  }
+  
+   
+  
+  table td,
+  table th{
+	border: 2px solid black;
+	padding: 12px;
+	text-align: center;
+  }
+  table th{
+	padding-bottom: 12px;
+	padding-top: 12px;
+	background-color:#FFD54E;
+	color: black;
+	text-align: center;
+	
+  }
+  
+
+  #td8{
+	background-color: red;
+	color: white;
+	cursor: pointer;
+  }
