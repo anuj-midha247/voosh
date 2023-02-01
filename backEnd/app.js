@@ -3,11 +3,14 @@ import mongoose from 'mongoose';
 import dotenv from "dotenv";
 import userRouter from './routes/user-routes';
 import orderRouter from './routes/order-routes';
+import cors from "cors";
 
 dotenv.config();
 const app = express();
 app.use(express.json());
-
+app.use(cors({
+    origin: "http://localhost:3000"
+}));
 app.use("/", userRouter);
 app.use("/", orderRouter);
 mongoose.connect(
