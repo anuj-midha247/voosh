@@ -3,6 +3,8 @@ import {Routes,Route} from "react-router-dom"
 import PrivateRoute from '../components/PrivateRoute';
 import Home from './Home';
 import Login from './Login';
+import Order from './Order';
+import Show from './Show';
 import Signup from './Signup';
 
 const allRoutes = () => {
@@ -10,16 +12,16 @@ const allRoutes = () => {
         <div>
             <Routes>
       <Route path="/" element={<Home/>}/>
-        <Route path="/add-user" element={<Signup/>}/>
-                <Route path="/login-user" element={<Login/>} />
-                <Route path="/add-order" element={ 
+        <Route path="/user" element={<Signup/>}/>
+                <Route path="/login" element={<Login/>} />
+                <Route path="/order" element={ 
         <PrivateRoute>
-          {/* <Create/> */}
+          {<Order/>}
         </PrivateRoute>
       } />
                  <Route path="/get-order" element={ 
         <PrivateRoute>
-          {/* <Create/> */}
+          {<Show/>}
         </PrivateRoute>
       } />
   </Routes>

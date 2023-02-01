@@ -23,10 +23,11 @@ const Login = () => {
       }
     })
       .then((res) => res.json()).then((data) => {
-        console.log(data.token);
+        console.log(data);
         setFormData({ phone: "", password: "" });
         localStorage.setItem("isAuth", "true");
-        nav("/get-order")
+        localStorage.setItem("token", data.token);
+        nav("/order");
       })
     
     
@@ -39,7 +40,7 @@ const Login = () => {
       <input placeholder="User Phone" id="name" name="phone"  type="text" value={formData.phone} onInput={handleInput} required/>
       <br/>
         <input placeholder="User Password" id="password" name="password"  type="password" value={formData.password} onInput={handleInput} required />
-        <input type="submit" value="SUBMIT" onInput={handleSubmit}/>
+        <input type="submit" value="SUBMIT" onClick={handleSubmit}/>
     </form>
   </div>
   )

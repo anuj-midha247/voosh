@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className="home">
       <div>
-      <Link to="/login-user">
+      <Link to="/login">
         <h3 >Login Page</h3>
       </Link>
       </div>
